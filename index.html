@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script type="text/javascript" src="./assets/js/arquivo.js"></script>
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css"> -->
+    <title>Painel Chamados</title>
+</head>
+<body>
+    <main class="container-main">
+        <section class="container-panel-head">
+            <div class="information-menu">
+                <span>UNIDADE DE SAÚDE</span>
+                <!-- Estas informações de data e hora devem ser alteradas dinamicamente pelo sistema -->
+                <div class="information-clock">
+                    <span>Cidade, 15 de agosto</span>
+                    <span>12:01:33</span>
+                </div>
+            </div>
+        </section>
+        <section class="container-panel-body">
+            <div class="current-call">
+                <div class="patient-doctor">
+                    <div class="info-name-container">
+                        <span class="info-name">Paciente:</span>
+                        <h2 id="paciente"><strong></strong></h2>    
+                    </div>
+                    <div class="info-name-container">
+                        <span class="info-name">Médico:</span>
+                        <span class="name-doctor">JOSÉ VIEIRA RAMOS</span>
+                    </div>
+                </div>
+                <div class="info-room">
+                    <div class="info-room-text">
+                        <span>CONSULTÓRIO:</span>
+                        <h2 class="number-room">01</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="title-division">
+                <span>Chamadas Anteriores</span>
+            </div>
+            <div class="info-call-previous">
+                <div class="table-container">
+                    <!-- Criando o esqueleto da tebela para preenchimento dinâmico com informações do banco de dados -->
+                    <table>
+                        <thead class="table-header">
+                            <tr>
+                                <th class="header-row">Paciente</th>
+                                <th class="space-col">&nbsp;</th>
+                                <th class="header-row">Profissional</th>
+                                <th class="space-col">&nbsp;</th>
+                                <th class="header-row">Consultório</th>
+                            </tr>    
+                        </thead>
+                        <tbody>
+                            <tr class="info-row">
+                                <td class="cell-patient">Mário José de Souza</td>
+                                <th class="space-col">&nbsp;</th>
+                                <td class="cell-doctor">José Vieira Ramos</td>
+                                <th class="space-col">&nbsp;</th>
+                                <td class="cell-room">02</td>
+                            </tr>
+                            <!-- Apagar as linhas a seguir da tabela para inserção dinâmica -->
+                            <tr class="info-row">
+                                <td class="cell-patient">Mário José de Souza</td>
+                                <th class="space-col">&nbsp;</th>
+                                <td class="cell-doctor">José Vieira Ramos</td>
+                                <th class="space-col">&nbsp;</th>
+                                <td class="cell-room">02</td>
+                            </tr>
+                            <tr class="info-row">
+                                <td class="cell-patient">Mário José de Souza</td>
+                                <th class="space-col">&nbsp;</th>
+                                <td class="cell-doctor">José Vieira Ramos</td>
+                                <th class="space-col">&nbsp;</th>
+                                <td class="cell-room">02</td>
+                            </tr>
+                            <tr class="info-row">
+                                <td class="cell-patient">Mário José de Souza</td>
+                                <th class="space-col">&nbsp;</th>
+                                <td class="cell-doctor">José Vieira Ramos</td>
+                                <th class="space-col">&nbsp;</th>
+                                <td class="cell-room">02</td>
+                            </tr>
+                            <!-- Fim exclusão -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <img src="./assets/img/logo.png" alt="logo web pro saúde">
+            <a href="https://webprosaude.com.br/" target="_blank" rel="noopener noreferrer">webprosaude.com.br</a>
+        </footer>
+    </main>
+</body>
+</html>

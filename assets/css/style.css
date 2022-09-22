@@ -1,0 +1,156 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Helvetica", Arial, sans-serif;
+    text-decoration: none;
+}
+
+.container-main, .container-panel-head, .information-menu, .current-call, .information-clock {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.container-main {
+    height: 100vh;
+    background-color: #e7dfdf;
+    flex-direction: column;
+}
+
+.container-panel-head {
+    background-color: #02032A;
+    color: #fff;
+    height: 25%;
+}
+
+.information-menu {
+    position: relative;
+    top: -2rem;
+    justify-content: space-between;
+    margin: 0 4rem;
+}
+
+.information-clock {
+    flex-direction: column;
+    height: 100%;
+    width: 10rem;
+}
+
+.container-panel-body {
+    background-color: #e7dfdf;
+    height: 70%;
+    width: 100%;
+}
+
+.current-call {
+    position: relative;
+    top: -4rem;
+    justify-content: space-between;
+    height: 10rem;
+    width: 100%;
+}
+
+.patient-doctor, .info-room {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    flex-direction: column;
+    background-color: #5ABBF2;
+    height: 90%;
+    width: 40%;
+    border-radius: 1.5rem;
+    margin: 0 4rem;
+}
+
+.info-name-container{
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+}
+
+.info-name-container h2 {
+    color: #fff;
+}
+
+.info-room {
+    width: 15%;
+    align-items: center;
+}
+
+.info-room h2 {
+    font-size: 5rem;
+}
+
+.name-doctor, .number-room {
+    color: #fff;
+}
+
+.title-division {
+    position: relative;
+    top: -3rem;
+    height: 2rem;
+    margin: 0 4rem;
+    border-bottom: 2px solid;
+}
+.title-division span {
+    font-size: 1.2rem;
+}
+
+.info-call-previous {
+    position: relative;
+    top: -1rem;
+}
+
+/* Table */
+
+.table-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 4rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: .5rem;
+}
+
+.info-row td{
+    margin-top: 8rem;
+    background-color: #5ABBF2;
+    height: 2.5rem;
+    border-radius: .3rem;
+    text-align: center;
+}
+
+.cell-patient, .cell-doctor {
+    width: 30%;
+}
+
+.space-col {
+    width: 100px;
+}
+
+.cell-room {
+    width: 8%;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    top: -.8rem;
+}
+
+footer img {
+    height: 3rem;
+}
+
+footer a {
+    color: #000;
+}
